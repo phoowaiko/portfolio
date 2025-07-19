@@ -1,15 +1,10 @@
+/* Import Tailwind CSS */
 @import "tailwindcss";
 
+/* Define CSS custom properties for light and dark modes */
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,8 +14,19 @@
   }
 }
 
+/* Define Tailwind CSS theme customizations */
+@theme {
+  --color-lightHover: "#fcf4ff";
+  --color-darkHover: "#2a004a";
+  --color-darkTheme: "#11001f";
+  --font-Ovo: "Ovo", serif;
+  --font-Outfit: "Outfit", sans-serif;
+  --font-display: "Outfit", "Ovo", sans-serif;
+}
+
+/* Apply custom properties to body */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-outfit);
 }
