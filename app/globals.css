@@ -26,7 +26,6 @@
 
 /* Apply custom properties to body */
 body {
-  background-color: var(--color-background);
   color: var(--color-foreground);
   font-family: var(--font-outfit);
 }
