@@ -27,7 +27,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <Image src={assets.header_bg_color} alt="" className="w-full" />
+        <Image src={assets.header_bg_color} alt="bgcolor" className="w-full" />
       </div>
 
       <nav
@@ -37,11 +37,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             : ""
         }`}>
         <a href="#top">
-          <Image
-            alt="logo"
-            src={isDarkMode ? assets.logo_dark : assets.logo}
-            className="w-28 cursor-pointer mr-14"
-          />
+          <div
+            className="text-lg sm:text:sm mr-14 
+            w-28
+            cursor-pointer">
+            Phoo Wai Ko
+          </div>
         </a>
 
         <ul
@@ -60,11 +61,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               About Me
             </a>
           </li>
-          <li>
-            <a href="#services" className="font-Ovo">
-              Services
-            </a>
-          </li>
+
           <li>
             <a href="#mywork" className="font-Ovo">
               My work

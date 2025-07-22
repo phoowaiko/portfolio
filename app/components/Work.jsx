@@ -23,7 +23,7 @@ const Work = ({ isDarkMode }) => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
         className="text-center text-5xl font-Ovo font-semibold">
-        My latest Work
+        My Project
       </motion.h2>
 
       <motion.p
@@ -32,7 +32,7 @@ const Work = ({ isDarkMode }) => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
         Welcome to my web development portfolio!Explore a collection of projects
-        showcasing my expertise in front-end development.
+        showcasing my expertise in front-end and back-end development.
       </motion.p>
 
       <motion.div

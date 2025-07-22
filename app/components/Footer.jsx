@@ -6,11 +6,11 @@ const Footer = ({ isDarkMode }) => {
   return (
     <div className="mt-20">
       <div className="text-center">
-        <Image
-          src={isDarkMode ? assets.logo_dark : assets.logo}
-          alt="logo"
-          className="w-36 mx-auto mb-2"
-        />
+        <div
+          className="text-lg sm:text:sm 
+            w-36 mx-auto mb-2">
+          PHOO WAI KO
+        </div>
 
         <div className="w-max flex items-center gap-2 mx-auto">
           <Image
@@ -18,7 +18,7 @@ const Footer = ({ isDarkMode }) => {
             alt="mailicon"
             className="w-6"
           />
-          phoowaiko0@gmail.com
+          phoowaiko.dev@gmail.com
         </div>
       </div>
 

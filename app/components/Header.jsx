@@ -4,16 +4,12 @@ import { assets } from "@/assets/assets";
 import { motion } from "motion/react";
 const Header = () => {
   return (
-    <div className="w-11/12  max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
+    <div className="w-11/12 pt-24  max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4 ">
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}>
-        <Image
-          src={assets.profile_img}
-          alt=""
-          className="pt-28 rounded-full w-32"
-        />
+        <Image src={assets.imgf} alt="profile" className="rounded-full w-32" />
       </motion.div>
 
       <motion.h3

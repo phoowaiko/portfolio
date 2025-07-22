@@ -6,7 +6,7 @@ const About = ({ isDarkMode }) => {
   return (
     <motion.div
       id="about"
-      className="w-full px-[12%] py-10 scroll-mt-20 "
+      className="w-full px-[12%] py-8 scroll-mt-20 "
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}>
@@ -21,7 +21,7 @@ const About = ({ isDarkMode }) => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo font-semibold">
+        className="text-center text-5xl font-Ovo font-semibold ">
         About me
       </motion.h2>
 
@@ -29,21 +29,13 @@ const About = ({ isDarkMode }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+        className=" w-full flex-col lg:flex-row items-center gap-20 my-20">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-          className="rounded-3xl w-64 sm:w-80 max-w-none">
-          <Image src={assets.user_image} alt="user" className="w-full" />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
+          initial={{ y: -30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           className="flex-1">
-          <p className="mb-10 max-w-2xl font-Ovo">
+          <p className="mb-12 text-xl font-Ovo">
             I am a passionate and highly motivated front-end developer with a
             strong foundation in modern web technologies. While I am just
             beginning my professional journey, I have developed solid skills in
@@ -56,8 +48,8 @@ const About = ({ isDarkMode }) => {
           <motion.ul
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1 }}
-            className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
+            transition={{ duration: 0.6, delay: 0.9 }}
+            className="grid grid-cols-1 sm:grid-cols-3 gap-6 ">
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <motion.li
                 whileHover={{ scale: 1.05 }}

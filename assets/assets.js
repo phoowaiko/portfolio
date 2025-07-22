@@ -12,6 +12,7 @@ import git from "./git.png";
 import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
+import phoo from "./phoo.jpg";
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
@@ -35,7 +36,16 @@ import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
-
+import imgd from "./imgd.jpg";
+import imge from "./imge.jpg";
+import imgf from "./imgf.jpg";
+import laravel from "./laravel.png";
+import mysql from "./mysql.png";
+import php from "./php.png";
+import tailwind from "./tailwind.svg";
+import vite from "./vite.png";
+import github from "./github.png";
+import react from "./react.svg";
 export const assets = {
   user_image,
   code_icon,
@@ -51,6 +61,7 @@ export const assets = {
   mongodb,
   right_arrow_white,
   logo,
+  phoo,
   logo_dark,
   mail_icon,
   mail_icon_dark,
@@ -74,27 +85,37 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  imgd,
+  imge,
+  imgf,
+  laravel,
+  php,
+  mysql,
+  tailwind,
+  vite,
+  github,
+  react,
 };
 
 export const workData = [
   {
     title: "Frontend project",
-    description: "Web Design",
+    description: "cosmetic Design",
     bgImage: "/work-1.png",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
+    title: "Design ",
+    description: "tailwind ",
     bgImage: "/work-2.png",
   },
   {
-    title: "Photography site",
-    description: "Web Design",
+    title: "React project",
+    description: "Ecommerce",
     bgImage: "/work-3.png",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
+    title: "Laravel project",
+    description: "Blogs design",
     bgImage: "/work-4.png",
   },
 ];
@@ -150,9 +171,13 @@ export const infoList = [
 ];
 
 export const toolsData = [
+  assets.tailwind,
   assets.vscode,
   assets.firebase,
-  assets.mongodb,
-  assets.figma,
-  assets.git,
+  assets.react,
+  assets.vite,
+  assets.laravel,
+  assets.php,
+  assets.mysql,
+  assets.github,
 ];
