@@ -1,10 +1,12 @@
 /* Import Tailwind CSS */
+
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+/* @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *)); */
 
 /* Define CSS custom properties for light and dark modes */
 :root {
   --background: #ffffff;
-  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,9 +18,10 @@
 
 /* Define Tailwind CSS theme customizations */
 @theme {
-  --color-lightHover: "#fcf4ff";
-  --color-darkHover: "#2a004a";
-  --color-darkTheme: "#11001f";
+  --color-lightHover: #fcf4ff;
+  --color-darkHover: #2a004a;
+  --color-darkTheme: #11001f;
+
   --font-Ovo: "Ovo", serif;
   --font-Outfit: "Outfit", sans-serif;
   --font-display: "Outfit", "Ovo", sans-serif;
@@ -26,6 +29,5 @@
 
 /* Apply custom properties to body */
 body {
-  color: var(--color-foreground);
   font-family: var(--font-outfit);
 }
