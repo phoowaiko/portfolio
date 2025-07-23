@@ -1,7 +1,9 @@
-import { assets, serviceData } from "@/assets/assets";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+
 import { motion } from "motion/react";
+
+import { assets, serviceData } from "@/assets/assets";
 
 const Services = () => {
   return (
@@ -9,10 +11,12 @@ const Services = () => {
       id="services"
       className="w-full px-[12%] py-10 scroll-mt-20 "
       initial={{ opacity: 0 }}
+      viewport={{ once: true }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}>
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
+        viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
         className="text-center mb-2 text-lg font-Ovo">
@@ -20,6 +24,7 @@ const Services = () => {
       </motion.h4>
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
+        viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
         className="text-center text-5xl font-Ovo font-semibold">
@@ -28,6 +33,7 @@ const Services = () => {
 
       <motion.p
         initial={{ opacity: 0 }}
+        viewport={{ once: true }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
@@ -37,6 +43,7 @@ const Services = () => {
 
       <motion.div
         initial={{ opacity: 0 }}
+        viewport={{ once: true }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
         className="grid  grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 sm:gap-9 my-10">
