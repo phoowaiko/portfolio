@@ -19,7 +19,7 @@ const About = ({ isDarkMode }) => {
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center mb-2 text-lg font-Ovo">
+        className="text-center mb-2 text-xl font-Ovo lg:text-lg">
         Introduction
       </motion.h4>
       <motion.h2
@@ -27,7 +27,7 @@ const About = ({ isDarkMode }) => {
         viewport={{ once: true }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo font-semibold ">
+        className="text-center text-5xl font-Ovo font-semibold sm:text-4xl sm:mt-6">
         About me
       </motion.h2>
 
@@ -36,14 +36,14 @@ const About = ({ isDarkMode }) => {
         viewport={{ once: true }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className=" w-full flex-col lg:flex-row items-center gap-20 my-20">
+        className=" w-full flex-col lg:flex-row items-center gap-20 my-7 lg:my-12">
         <motion.div
           initial={{ y: -30, opacity: 0 }}
           viewport={{ once: true }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex-1">
-          <p className="mb-12 text-xl font-Ovo">
+          <p className="mb-12 text-xl font-Ovo  text-center lg:text-left">
             I am a passionate and highly motivated front-end developer with a
             strong foundation in modern web technologies. While I am just
             beginning my professional journey, I have developed solid skills in
@@ -85,7 +85,7 @@ const About = ({ isDarkMode }) => {
               viewport={{ once: true }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 1 }}
-              className="my-6 text-gray-700 text-4xl font-semibold font-Ovo dark:text-white/80">
+              className="my-3 lg:my-8 text-gray-700 text-4xl font-semibold font-Ovo dark:text-white/80">
               Tools I use
             </motion.h4>
 
