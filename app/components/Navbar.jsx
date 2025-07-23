@@ -93,7 +93,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           <button className="block md:hidden ml-3" onClick={openMenu}>
             <Image
               src={isDarkMode ? assets.menu_white : assets.menu_black}
-              alt=""
+              alt="menuicon"
               className="w-6"
             />
           </button>
@@ -102,7 +102,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
         {/* ------mobile menu------- */}
         <ul
           ref={sideMenuRef}
-          className="md:hidden flex  flex-col gap-4 py-20 px-10 fixed -right-64 top-0 botton-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white">
+          className="md:hidden flex  flex-col gap-4 py-20 px-10 fixed -right-64 top-0 botton-0 w-64 z-50 h-screen bg-white transition duration-500 dark:bg-darkHover dark:text-white">
           <div className="absolute  right-6 top-6 }" onClick={closeMenu}>
             <Image
               src={isDarkMode ? assets.close_white : assets.close_black}
